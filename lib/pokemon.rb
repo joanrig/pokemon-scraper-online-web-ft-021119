@@ -37,4 +37,8 @@ class Pokemon
     self.hp = new_hp
   end
 
+  def self.alter_hp
+    db.execute("UPDATE pokeman SET hp = 59 WHERE hp = 60")
+  end
+
 end
